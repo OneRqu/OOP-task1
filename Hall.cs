@@ -1,6 +1,6 @@
 ﻿namespace OOP_task1
 {
-    public class Hall(int number)
+    public class Hall(int number) : ICleanable
     {
         private List<Seat> _seats = new List<Seat>();
         public int Number { get; } = number;
@@ -17,7 +17,7 @@
 
         public void Clean()
         {
-            _seats = new List<Seat>();
+            Console.WriteLine("Зал убран");
         }
     }
 }
